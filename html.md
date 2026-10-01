@@ -1,1 +1,133 @@
-HTML 주요 태그 정리 GuideHTML에서 자주 사용하는 핵심 태그들을 역할별로 분류한 참고 자료입니다.1. 기본 구조 태그태그설명<!DOCTYPE html>HTML5 문서임을 선언<html>HTML 문서의 최상위(루트) 요소<head>문서 메타데이터, 제목, 외부 스타일/스크립트 연결 정보<body>웹브라우저 화면에 실제 표시되는 콘텐츠 영역2. 메타 & 헤더 태그 (<head> 내부)태그설명<title>웹 브라우저 탭에 표시되는 페이지 제목<meta>검색엔진 최적화(SEO), 문자 인코딩(UTF-8), 뷰포트 설정 등 메타데이터 정의<link>외부 CSS 파일이나 페비콘(Favicon) 등을 문서와 연결<style>문서 내부에 CSS 스타일을 작성<script>자바스크립트 코드 작성 또는 외부 JS 파일 연결3. 레이아웃 & 시맨틱(Semantic) 태그태그설명<header>머리말(헤더) 영역 (로고, 상단 메뉴 등)<nav>내비게이션 링크들의 집합<main>문서의 핵심 및 주요 콘텐츠 영역 (페이지당 1개 권장)<article>독립적으로 분리 가능한 콘텐츠 (블로그 글, 뉴스 기사 등)<section>주제별 콘텐츠 구역<aside>사이드바, 관련 광고 등 보조 콘텐츠<footer>꼬리말(푸터) 영역 (저작권 정보, 하단 메뉴 등)<div>아무런 의미 없이 영역을 나누는 블록 그룹 태그<span>텍스트 단위나 인라인 영역을 묶는 인라인 그룹 태그4. 텍스트 관련 태그태그설명<h1> ~ <h6>제목 표시 (숫자가 작을수록 큰 제목)<p>하나의 단락(Paragraph) 구분<br>줄바꿈 (Self-closing 태그)<hr>수평 분리선 구분선<strong>중요한 텍스트 (굵게 표시 + 의미 강조)<b>단순 텍스트 굵게 표시 (의미적 강조 없음)<em>텍스트 기울임 (의미적 강조)<i>단순 텍스트 기울임 (아이콘 표기 등에 자주 쓰임)<a>다른 페이지나 URL로 이동하는 하이퍼링크 생성 (href 속성 사용)5. 목록(List) 태그태그설명<ul>순서가 없는 목록 (Unordered List - 불릿 포인트)<ol>순서가 있는 목록 (Ordered List - 번호)<li>목록의 각 항목 (List Item)6. 표(Table) 태그태그설명<table>표 전체를 감싸는 태그<tr>표의 행(Row) 생성<th>표의 제목 열(Header Cell - 굵게 및 중앙 정렬)<td>표의 데이터 셀(Data Cell)<thead>표의 헤더 영역 그룹화<tbody>표의 본문 영역 그룹화7. 폼(Form) 및 입력 태그태그설명<form>사용자 입력을 서버로 전송하기 위한 양식 구역<input>다양한 형태의 입력 필드 생성 (type 속성: text, password, checkbox, radio 등)<label>입력 요소(<input>)에 캡션/이름을 연결<textarea>여러 줄의 텍스트 입력창<select>드롭다운 선택 상자 생성<option>드롭다운 내 항목 지정<button>클릭 가능한 버튼 생성8. 미디어 태그태그설명<img>이미지 삽입 (src, alt 속성 사용)<audio>오디오 파일 재생<video>비디오 파일 재생<iframe>다른 웹 페이지를 인라인 프레임으로 삽입
+물론이야. 자주 사용하는 **HTML 태그**를 용도별로 표로 정리하면 아래와 같아.
+
+ ## 1\. 문서 기본 구조
+
+ | 태그 | 용도 | 예시 |
+| --- | --- | --- |
+| `<html>` | HTML 문서의 최상위 요소 | `<html>...</html>` |
+| `<head>` | 문서의 메타정보 영역 | `<head>...</head>` |
+| `<body>` | 실제 화면에 표시되는 내용 | `<body>...</body>` |
+| `<title>` | 브라우저 탭의 제목 | `<title>페이지 제목</title>` |
+| `<meta>` | 문자셋, viewport 등 메타정보 | `<meta charset="UTF-8">` |
+| `<link>` | 외부 CSS 등의 리소스 연결 | `<link rel="stylesheet" href="style.css">` |
+| `<style>` | HTML 내부에 CSS 작성 | `<style>p { color:red; }</style>` |
+| `<script>` | JavaScript 삽입/연결 | `<script src="app.js"></script>` |
+
+## 2\. 텍스트 관련
+
+ | 태그 | 용도 | 예시 |
+| --- | --- | --- |
+| `<h1>` \~ `<h6>` | 제목 | `<h1>제목</h1>` |
+| `<p>` | 문단 | `<p>내용입니다.</p>` |
+| `<br>` | 줄바꿈 | `안녕<br>하세요` |
+| `<hr>` | 수평 구분선 | `<hr>` |
+| `<strong>` | 중요함을 의미하는 강조 | `<strong>중요</strong>` |
+| `<b>` | 굵게 표시 | `<b>굵은 글씨</b>` |
+| `<em>` | 강조 | `<em>강조</em>` |
+| `<i>` | 관용적으로 기울임 표시 | `<i>italic</i>` |
+| `<small>` | 작은 글씨 | `<small>부가 정보</small>` |
+| `<mark>` | 형광펜처럼 강조 | `<mark>검색어</mark>` |
+| `<del>` | 삭제된 내용 | `<del>삭제</del>` |
+| `<ins>` | 추가된 내용 | `<ins>추가</ins>` |
+| `<sub>` | 아래 첨자 | `H<sub>2</sub>O` |
+| `<sup>` | 위 첨자 | `x<sup>2</sup>` |
+| `<code>` | 코드 표현 | `<code>console.log()</code>` |
+| `<pre>` | 공백/줄바꿈을 그대로 표시 | `<pre>...</pre>` |
+| `<blockquote>` | 긴 인용문 | `<blockquote>인용문</blockquote>` |
+
+## 3\. 링크 & 미디어
+
+ | 태그 | 용도 | 예시 |
+| --- | --- | --- |
+| `<a>` | 하이퍼링크 | `<a href="https://example.com">링크</a>` |
+| `<img>` | 이미지 | `<img src="image.jpg" alt="설명">` |
+| `<audio>` | 오디오 | `<audio controls>...</audio>` |
+| `<video>` | 비디오 | `<video controls>...</video>` |
+| `<source>` | 미디어 파일 지정 | `<source src="video.mp4">` |
+| `<iframe>` | 다른 웹페이지/콘텐츠 삽입 | `<iframe src="..."></iframe>` |
+| `<figure>` | 이미지·도표 등의 독립적인 콘텐츠 | `<figure>...</figure>` |
+| `<figcaption>` | figure의 설명 | `<figcaption>이미지 설명</figcaption>` |
+
+## 4\. 목록
+
+ | 태그 | 용도 | 예시 |
+| --- | --- | --- |
+| `<ul>` | 순서 없는 목록 | `<ul><li>사과</li></ul>` |
+| `<ol>` | 순서 있는 목록 | `<ol><li>첫 번째</li></ol>` |
+| `<li>` | 목록 항목 | `<li>항목</li>` |
+| `<dl>` | 설명 목록 | `<dl>...</dl>` |
+| `<dt>` | 설명할 용어 | `<dt>HTML</dt>` |
+| `<dd>` | 용어에 대한 설명 | `<dd>웹 문서 구조...</dd>` |
+
+## 5\. 표
+
+ | 태그 | 용도 | 예시 |
+| --- | --- | --- |
+| `<table>` | 표 전체 | `<table>...</table>` |
+| `<thead>` | 표의 머리글 영역 | `<thead>...</thead>` |
+| `<tbody>` | 표의 본문 영역 | `<tbody>...</tbody>` |
+| `<tfoot>` | 표의 바닥글 영역 | `<tfoot>...</tfoot>` |
+| `<tr>` | 행 | `<tr>...</tr>` |
+| `<th>` | 제목 셀 | `<th>이름</th>` |
+| `<td>` | 일반 데이터 셀 | `<td>홍길동</td>` |
+| `<caption>` | 표 제목 | `<caption>회원 목록</caption>` |
+| `colspan` | 여러 열을 하나로 합침 | `<td colspan="2">` |
+| `rowspan` | 여러 행을 하나로 합침 | `<td rowspan="2">` |
+
+## 6\. 폼(Form)
+
+ | 태그 | 용도 | 예시 |
+| --- | --- | --- |
+| `<form>` | 입력 양식 전체 | `<form>...</form>` |
+| `<input>` | 다양한 입력 필드 | `<input type="text">` |
+| `<textarea>` | 여러 줄 텍스트 입력 | `<textarea></textarea>` |
+| `<button>` | 버튼 | `<button>확인</button>` |
+| `<label>` | 입력 요소의 설명 | `<label for="name">이름</label>` |
+| `<select>` | 선택 목록 | `<select>...</select>` |
+| `<option>` | 선택 목록의 항목 | `<option>서울</option>` |
+| `<optgroup>` | option 그룹화 | `<optgroup label="지역">` |
+| `<fieldset>` | 폼 요소 그룹화 | `<fieldset>...</fieldset>` |
+| `<legend>` | fieldset의 제목 | `<legend>회원정보</legend>` |
+| `<datalist>` | 입력 자동완성 목록 | `<datalist>...</datalist>` |
+| `<output>` | 계산 결과 등의 출력 | `<output>100</output>` |
+
+## 7\. 시맨틱(Semantic) 태그
+
+ HTML5에서 **콘텐츠의 의미와 구조를 명확하게 표현**할 때 사용하는 태그들이야.
+
+ | 태그 | 용도 |
+| --- | --- |
+| `<header>` | 페이지 또는 영역의 머리말 |
+| `<nav>` | 내비게이션 영역 |
+| `<main>` | 페이지의 주요 콘텐츠 |
+| `<section>` | 주제별 콘텐츠 영역 |
+| `<article>` | 독립적인 콘텐츠 |
+| `<aside>` | 본문과 간접적으로 관련된 콘텐츠 |
+| `<footer>` | 페이지 또는 영역의 바닥글 |
+| `<address>` | 연락처 정보 |
+| `<details>` | 펼치고 접을 수 있는 상세 내용 |
+| `<summary>` | `<details>`의 제목 |
+
+## 8\. 컨테이너 / 인라인 요소
+
+ | 태그 | 용도 | 특징 |
+| --- | --- | --- |
+| `<div>` | 콘텐츠를 그룹화 | 블록 요소 |
+| `<span>` | 텍스트 등을 그룹화 | 인라인 요소 |
+
+예를 들어:
+
+```
+<div>
+  <h2>회원 정보</h2>
+  <p>이름: <span>홍길동</span></p>
+</div>
+```
+
+ ### ⭐ 우선적으로 외워둘 태그
+
+ HTML을 처음 배우는 단계라면 우선 이것부터 익히면 좋아.
+
+ `html` → `head` → `body` → `h1~h6` → `p` → `a` → `img` → `ul/ol/li` → `div` → `span` → `form/input/button` → `table/tr/th/td` → `header/nav/main/section/article/footer`
+
+ 그리고 **`<b>`와 `<strong>`, `<i>`와 `<em>`처럼 비슷해 보이는 태그의 차이**와 **시맨틱 태그를 언제 사용해야 하는지**를 이해하면 HTML을 훨씬 제대로 사용할 수 있어.
